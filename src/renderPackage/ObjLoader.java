@@ -19,12 +19,14 @@ public class ObjLoader {
     private List<Integer> vaos = new ArrayList <> ();
     private List<Integer> vbos = new ArrayList <> ();
     
-    public RawModel loadToVao(float [] positions) {
+    public RawModel loadToVAO(float [] positions) {
         int vaoID = createVAO();
         storeDataInAttributeList(0,positions);
         unbindVAO();
         return new RawModel(vaoID, positions.length/3);
     }
+    
+    
     
     public void cleanUp() {
         for(int vbo:vbos) {

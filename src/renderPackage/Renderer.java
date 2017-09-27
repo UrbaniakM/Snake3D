@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package renderPackage;
+import models.RawModel;
 import org.lwjgl.opengl.*;
 
 /**
